@@ -1,0 +1,515 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
+	x:Class="BLS_Sniffer.TexasVisual"
+	x:Name="Window"
+	Title="TexasVisual"
+	Width="640" Height="480">
+	<Window.Resources>
+		<Storyboard x:Key="NegativeBlocks">
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border1">
+				<EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border2">
+				<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border3">
+				<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border4">
+				<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border5">
+				<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border6">
+				<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border7">
+				<EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border8">
+				<EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1.1" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border9">
+				<EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border10">
+				<EasingDoubleKeyFrame KeyTime="0:0:1" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border11">
+				<EasingDoubleKeyFrame KeyTime="0:0:1.1" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1.4" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border12">
+				<EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border13">
+				<EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1.6" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border14">
+				<EasingDoubleKeyFrame KeyTime="0:0:1.4" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1.7" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border15">
+				<EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border16">
+				<EasingDoubleKeyFrame KeyTime="0:0:1.6" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1.9" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border17">
+				<EasingDoubleKeyFrame KeyTime="0:0:1.7" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:2" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border18">
+				<EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:2.1" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border19">
+				<EasingDoubleKeyFrame KeyTime="0:0:1.9" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:2.2" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border20">
+				<EasingDoubleKeyFrame KeyTime="0:0:2" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:2.3" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border21">
+				<EasingDoubleKeyFrame KeyTime="0:0:2.1" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:2.4" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border22">
+				<EasingDoubleKeyFrame KeyTime="0:0:2.2" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:2.5" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border23">
+				<EasingDoubleKeyFrame KeyTime="0:0:2.3" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:2.6" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border24">
+				<EasingDoubleKeyFrame KeyTime="0:0:2.4" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:2.7" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Key="TexasBlock">
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border26">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="1">
+					<EasingDoubleKeyFrame.EasingFunction>
+						<ExponentialEase EasingMode="EaseOut" Exponent="3"/>
+					</EasingDoubleKeyFrame.EasingFunction>
+				</EasingDoubleKeyFrame>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Key="PositiveBlocks">
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border27">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border28">
+				<EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border29">
+				<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border30">
+				<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border31">
+				<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border32">
+				<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border33">
+				<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border34">
+				<EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1.1" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border35">
+				<EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border36">
+				<EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border37">
+				<EasingDoubleKeyFrame KeyTime="0:0:1" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1.4" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border38">
+				<EasingDoubleKeyFrame KeyTime="0:0:1.1" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border39">
+				<EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1.6" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border40">
+				<EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1.7" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border41">
+				<EasingDoubleKeyFrame KeyTime="0:0:1.4" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border42">
+				<EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1.9" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border43">
+				<EasingDoubleKeyFrame KeyTime="0:0:1.6" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:2" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border44">
+				<EasingDoubleKeyFrame KeyTime="0:0:1.7" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:2.1" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border45">
+				<EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:2.2" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border46">
+				<EasingDoubleKeyFrame KeyTime="0:0:1.9" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:2.3" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border47">
+				<EasingDoubleKeyFrame KeyTime="0:0:2" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:2.4" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border48">
+				<EasingDoubleKeyFrame KeyTime="0:0:2.1" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:2.5" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border49">
+				<EasingDoubleKeyFrame KeyTime="0:0:2.2" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:2.6" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border50">
+				<EasingDoubleKeyFrame KeyTime="0:0:2.3" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:2.7" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border51">
+				<EasingDoubleKeyFrame KeyTime="0:0:2.4" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:2.8" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Key="NegativeText">
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock1">
+				<EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock2">
+				<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock3">
+				<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock4">
+				<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0.01"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Key="LabelStuff">
+			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid">
+				<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="textBlock5">
+				<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Collapsed}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="textBlock6">
+				<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Collapsed}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="textBlock7">
+				<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Collapsed}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="textBlock8">
+				<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Collapsed}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="textBlock9">
+				<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Collapsed}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="textBlock10">
+				<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Collapsed}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="textBlock11">
+				<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Collapsed}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="textBlock12">
+				<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Collapsed}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="textBlock13">
+				<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Collapsed}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="textBlock14">
+				<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Collapsed}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="textBlock15">
+				<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Collapsed}"/>
+			</ObjectAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Key="LabelStuff2">
+			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="textBlock5">
+				<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="textBlock6">
+				<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="textBlock7">
+				<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="textBlock8">
+				<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="textBlock9">
+				<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="textBlock10">
+				<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="textBlock11">
+				<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="textBlock12">
+				<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="textBlock13">
+				<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="textBlock14">
+				<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="textBlock15">
+				<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+		</Storyboard>
+	</Window.Resources>
+	<Window.Triggers>
+	
+	</Window.Triggers>
+
+	<Grid x:Name="LayoutRoot" 
+		KeyUp="StartAnimation" 
+          
+          >
+		<StackPanel VerticalAlignment="Bottom" HorizontalAlignment="Left" Orientation="Horizontal" >
+			<Button Content="OK GO"  Click="Button_Click" />
+		</StackPanel>
+		<Viewbox>
+			<Grid>
+        
+				<!-- The positive values --> <!-- The positive values --> <Border x:Name="border26" Height="113.249900662208" Width="113.249900662208" Background="#FF076D00" Margin="439.494,76.376,82.255,262.873" Opacity="0" >
+					<TextBlock TextWrapping="Wrap" Text="Texas" Foreground="White" FontFamily="Segoe UI Black" Margin="4" FontSize="32"/>
+				</Border> 
+<!-- The positive values --> <Border x:Name="border27" Height="45.9565011723042" Width="45.9565011723042" Background="#FF076D00" Margin="449.848,228.814,139.195,177.729" Opacity="0" /> 
+<!-- The positive values --> <Border x:Name="border28" Height="41.5154188224086" Width="41.5154188224086" Background="#FF076D00" Margin="407.332,228.667,186.152,182.317" Opacity="0" /> 
+<!-- The positive values --> <Border x:Name="border29" Height="36.7919828223487" Width="36.7919828223487" Background="#FF076D00" Margin="485.789,190.962,112.418,224.745" Opacity="0" /> 
+<!-- The positive values --> <Border x:Name="border30" Height="29.7733101955426" Width="29.7733101955426" Background="#FF076D00" Margin="454.684,197.981,150.542,224.745" Opacity="0" /> 
+<!-- The positive values --> <Border x:Name="border31" Height="28.2924018068456" Width="28.2924018068456" Background="#FF076D00" Margin="496.804,228.829,109.903,195.378" Opacity="0" /> 
+<!-- The positive values --> <Border x:Name="border32" Height="25.0996015904635" Width="25.0996015904635" Background="#FF076D00" Margin="562.267,202.608,47.632,224.792" Opacity="0" /> 
+<!-- The positive values --> <Border x:Name="border33" Height="23.8581223066695" Width="23.8581223066695" Background="#FF076D00" Margin="429.435,203.896,181.706,224.745" Opacity="0" /> 
+<!-- The positive values --> <Border x:Name="border34" Height="21.2847363150216" Width="21.2847363150216" Background="#FF076D00" Margin="525.93,248.088,87.784,183.126" Opacity="0" /> 
+<!-- The positive values --> <Border x:Name="border35" Height="19.8448985888061" Width="19.8448985888061" Background="#FF076D00" Margin="523.731,207.909,91.423,224.745" Opacity="0" /> 
+<!-- The positive values --> <Border x:Name="border36" Height="19.785348114198" Width="19.785348114198" Background="#FF076D00" Margin="563.268,228.815,51.946,203.899" Opacity="0" /> 
+<!-- The positive values --> <Border x:Name="border37" Height="18.5919337348217" Width="18.5919337348217" Background="#FF076D00" Margin="543.677,228.829,72.73,205.078" Opacity="0" /> 
+<!-- The positive values --> <Border x:Name="border38" Height="17.0637041699626" Width="17.0637041699626" Background="#FF076D00" Margin="525.846,228.828,92.089,206.607" Opacity="0" /> 
+<!-- The positive values --> <Border x:Name="border39" Height="16.7690190530037" Width="16.7690190530037" Background="#FF076D00" Margin="544.575,210.985,73.655,224.745" Opacity="0" /> 
+<!-- The positive values --> <Border x:Name="border40" Height="16.1882673563294" Width="16.1882673563294" Background="#FF076D00" Margin="523.731,190.962,95.08,245.349" RenderTransformOrigin="-1.376,2.452" Opacity="0" /> 
+<!-- The positive values --> <Border x:Name="border41" Height="11.7686022959398" Width="11.7686022959398" Background="#FF076D00" Margin="540.92,190.376,82.311,250.355" Opacity="0" /> 
+<!-- The positive values --> <Border x:Name="border42" Height="10.9836241741968" Width="10.9836241741968" Background="#FF076D00" Margin="407.332,216.77,216.684,224.745" Opacity="0" /> 
+<!-- The positive values --> <Border x:Name="border43" Height="10.1168176814649" Width="10.1168176814649" Background="#FF076D00" Margin="418.319,205.962,206.563,236.42" Opacity="0" /> 
+<!-- The positive values --> <Border x:Name="border44" Height="9.45357075395324" Width="9.45357075395324" Background="#FF076D00" Margin="418.982,218.301,206.563,224.745" Opacity="0" /> 
+<!-- The positive values --> <Border x:Name="border45" Height="9.43027040969664" Width="9.43027040969664" Background="#FF076D00" Margin="553.838,192.465,71.731,250.604" Opacity="0" /> 
+<!-- The positive values --> <Border x:Name="border46" Height="8.63423418723398" Width="8.63423418723398" Background="#FF076D00" Margin="408.664,207.112,217.701,236.753" Opacity="0" /> 
+<!-- The positive values --> <Border x:Name="border47" Height="8.61220064791805" Width="8.61220064791805" Background="#FF076D00" Margin="564.267,193.283,62.12,250.604" Opacity="0" /> 
+<!-- The positive values --> <Border x:Name="border48" Height="8.48881617188168" Width="8.48881617188168" Background="#FF076D00" Margin="547.882,248.088,78.628,195.922" Opacity="0" /> 
+<!-- The positive values --> <Border x:Name="border49" Height="7.18748913042656" Width="7.18748913042656" Background="#FF076D00" Margin="554.157,202.877,73.655,242.435" Opacity="0" /> 
+<!-- The positive values --> <Border x:Name="border50" Height="6.91953755680248" Width="6.91953755680248" Background="#FF076D00" Margin="544.575,203.145,83.505,242.435" Opacity="0" /> 
+<!-- The positive values --> <Border x:Name="border51" Height="6.14247507117449" Width="6.14247507117449" Background="#FF076D00" Margin="573.88,195.753,54.977,250.604" Opacity="0" /> 
+ <!-- The negative values --> <Border x:Name="border" Height="3.79736750920951" Width="3.79736750920951" Background="#FF9A0000" Margin="158.17,176.209,473.032,272.493" Opacity="0" /> 
+
+ <!-- The negative values --> <Border x:Name="border1" Height="3.87169213652119" Width="3.87169213652119" Background="#FF9A0000" Margin="163.455,181.574,467.673,267.053" Opacity="0" /> 
+
+ <!-- The negative values --> <Border x:Name="border2" Height="9.15641851380768" Width="9.15641851380768" Background="#FF9A0000" Margin="158.17,165.771,467.673,277.572" Opacity="0" /> 
+
+ <!-- The negative values --> <Border x:Name="border3" Height="13.3041346956501" Width="13.3041346956501" Background="#FF9A0000" Margin="216.171,220.045,405.524,219.15" Opacity="0" /> 
+
+ <!-- The negative values --> <Border x:Name="border4" Height="14.1802679805425" Width="14.1802679805425" Background="#FF9A0000" Margin="249.906,209.336,370.913,228.983" Opacity="0" /> 
+
+ <!-- The negative values --> <Border x:Name="border5" Height="14.9489130039612" Width="14.9489130039612" Background="#FF9A0000" Margin="210.081,203.596,409.969,233.954" Opacity="0" /> 
+
+ <!-- The negative values --> <Border x:Name="border6" Height="15.5196649448369" Width="15.5196649448369" Background="#FF9A0000" Margin="240.89,227.763,378.589,209.217" Opacity="0" /> 
+
+ <!-- The negative values --> <Border x:Name="border7" Height="16.8757222067679" Width="16.8757222067679" Background="#FF9A0000" Margin="231.53,209.336,386.593,226.287" Opacity="0" /> 
+
+ <!-- The negative values --> <Border x:Name="border8" Height="17.5519229715721" Width="17.5519229715721" Background="#FF9A0000" Margin="191.029,203.596,426.418,231.351" Opacity="0" /> 
+
+ <!-- The negative values --> <Border x:Name="border9" Height="19.4378496753113" Width="19.4378496753113" Background="#FF9A0000" Margin="145.029,246.97,470.532,186.091" Opacity="0" /> 
+
+ <!-- The negative values --> <Border x:Name="border10" Height="20.3275674885118" Width="20.3275674885118" Background="#FF9A0000" Margin="122.81,246.97,491.861,185.201" Opacity="0" /> 
+
+ <!-- The negative values --> <Border x:Name="border11" Height="20.6121323496624" Width="20.6121323496624" Background="#FF9A0000" Margin="191.029,248.341,423.358,183.546" Opacity="0" /> 
+
+ <!-- The negative values --> <Border x:Name="border12" Height="22.7191549138607" Width="22.7191549138607" Background="#FF9A0000" Margin="216.171,234.849,396.109,194.931" Opacity="0" /> 
+
+ <!-- The negative values --> <Border x:Name="border13" Height="23.4301088345744" Width="23.4301088345744" Background="#FF9A0000" Margin="166.099,236.028,445.47,193.041" Opacity="0" /> 
+
+ <!-- The negative values --> <Border x:Name="border14" Height="23.642123424092" Width="23.642123424092" Background="#FF9A0000" Margin="191.029,223.045,420.328,205.812" Opacity="0" /> 
+
+ <!-- The negative values --> <Border x:Name="border15" Height="24.0638733374326" Width="24.0638733374326" Background="#FF9A0000" Margin="226.748,183.772,384.187,244.663" Opacity="0" /> 
+
+ <!-- The negative values --> <Border x:Name="border16" Height="24.8193472919817" Width="24.8193472919817" Background="#FF9A0000" Margin="97.326,211.893,512.854,215.787" Opacity="0" /> 
+
+ <!-- The negative values --> <Border x:Name="border17" Height="30.3595125125553" Width="30.3595125125553" Background="#FF9A0000" Margin="159.17,203.596,445.47,218.544" Opacity="0" /> 
+
+ <!-- The negative values --> <Border x:Name="border18" Height="30.5772791464512" Width="30.5772791464512" Background="#FF9A0000" Margin="223.827,151.174,380.595,270.748" Opacity="0" /> 
+
+ <!-- The negative values --> <Border x:Name="border19" Height="33.623949797726" Width="33.623949797726" Background="#FF9A0000" Margin="123.81,211.846,477.565,207.029" Opacity="0" /> 
+
+ <!-- The negative values --> <Border x:Name="border20" Height="40.0882775883425" Width="40.0882775883425" Background="#FF9A0000" Margin="212.816,109.164,382.095,303.247" Opacity="0" >
+					<TextBlock x:Name="textBlock" TextWrapping="Wrap" Text="New York" Foreground="White" FontFamily="Segoe UI Black" Margin="4,4,-11.496,-11.496" Opacity="0"/>
+				</Border> 
+
+ <!-- The negative values --> <Border x:Name="border21" Height="40.4895048129759" Width="40.4895048129759" Background="#FF9A0000" Margin="170.826,108.762,423.683,303.247" Opacity="0" >
+					<TextBlock x:Name="textBlock1" TextWrapping="Wrap" Text="Georgia" Foreground="White" FontFamily="Segoe UI Black" Margin="4" FontSize="8" Opacity="0"/>
+				</Border> 
+
+ <!-- The negative values --> <Border x:Name="border22" Height="44.0819691030244" Width="44.0819691030244" Background="#FF9A0000" Margin="113.352,165.771,477.565,242.646" Opacity="0" >
+					<TextBlock x:Name="textBlock2" TextWrapping="Wrap" Text="Ohio" Foreground="White" FontFamily="Segoe UI Black" Margin="4,4,-7.502,-7.502" Opacity="0"/>
+				</Border> 
+
+ <!-- The negative values --> <Border x:Name="border23" Height="50.9219991752091" Width="50.9219991752091" Background="#FF9A0000" Margin="170.826,151.174,413.251,250.403" Opacity="0" >
+					<TextBlock x:Name="textBlock3" TextWrapping="Wrap" Text="Michigan" Foreground="White" FontFamily="Segoe UI Black" Margin="4,4,-0.662,-0.662" FontSize="9.333" Opacity="0"/>
+				</Border> 
+
+ <!-- The negative values --> <Border x:Name="border24" Height="55.5839905008627" Width="55.5839905008627" Background="#FF9A0000" Margin="113.352,108.687,466.063,288.228" Opacity="0" >
+					<TextBlock x:Name="textBlock4" TextWrapping="Wrap" Text="Illinois" Foreground="White" FontFamily="Segoe UI Black" Margin="4" Opacity="0"/>
+				</Border>
+				<Border x:Name="border25" BorderBrush="Black" BorderThickness="0" HorizontalAlignment="Left" Height="69" Margin="297.5,195.753,0,0" VerticalAlignment="Top" Width="69" Background="#FF076D00">
+					<TextBlock x:Name="textBlock4_Copy" TextWrapping="Wrap" Text="477K Job Gain" Foreground="White" FontFamily="Segoe UI Black" Margin="4" FontSize="10.667"/>
+				</Border>
+				<TextBlock x:Name="textBlock4_Copy1" TextWrapping="Wrap" Text="US Job Gains (2008-Present)" Foreground="#FF212121" FontFamily="Segoe UI Black" Margin="297.5,269.753,276.5,121.747" FontSize="10.667" Width="90"/> 
+
+			</Grid>
+		</Viewbox>
+			<Grid x:Name="grid" Visibility="Collapsed">
+				<TextBlock x:Name="textBlock16" Text="MADE BY @exjon" HorizontalAlignment="Right" VerticalAlignment="Bottom" />
+				<TextBlock x:Name="textBlock5" Text="MADE BY @exjon" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,357,264.75" RenderTransformOrigin="0.5,0.5" FontSize="29.333" Visibility="Collapsed" >
+					<TextBlock.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform/>
+							<SkewTransform/>
+							<RotateTransform Angle="40.573"/>
+							<TranslateTransform/>
+						</TransformGroup>
+					</TextBlock.RenderTransform>
+				</TextBlock>
+				<TextBlock x:Name="textBlock6" Text="MADE BY @exjon" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,178.5,342.75" RenderTransformOrigin="0.5,0.5" FontSize="21.333" Visibility="Collapsed" >
+					<TextBlock.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform/>
+							<SkewTransform/>
+							<RotateTransform Angle="-40.009"/>
+							<TranslateTransform/>
+						</TransformGroup>
+					</TextBlock.RenderTransform>
+				</TextBlock>
+				<TextBlock x:Name="textBlock7" Text="MADE BY @exjon" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,62.25,224.25" RenderTransformOrigin="0.5,0.5" FontSize="26.667" Visibility="Collapsed" >
+					<TextBlock.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform/>
+							<SkewTransform/>
+							<RotateTransform Angle="-34.699"/>
+							<TranslateTransform/>
+						</TransformGroup>
+					</TextBlock.RenderTransform>
+				</TextBlock>
+				<TextBlock x:Name="textBlock8" Text="MADE BY @exjon" HorizontalAlignment="Right" VerticalAlignment="Bottom" Visibility="Collapsed" />
+				<TextBlock x:Name="textBlock9" Text="MADE BY @exjon" HorizontalAlignment="Right" VerticalAlignment="Bottom" Visibility="Collapsed" />
+				<TextBlock x:Name="textBlock10" Text="MADE BY @exjon" HorizontalAlignment="Right" VerticalAlignment="Bottom" Visibility="Collapsed" />
+				<TextBlock x:Name="textBlock11" Text="MADE BY @exjon" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,381.75,239.25" RenderTransformOrigin="0.5,0.5" FontSize="24" Visibility="Collapsed" >
+					<TextBlock.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform/>
+							<SkewTransform/>
+							<RotateTransform Angle="-19.753"/>
+							<TranslateTransform/>
+						</TransformGroup>
+					</TextBlock.RenderTransform>
+				</TextBlock>
+				<TextBlock x:Name="textBlock12" Text="MADE BY @exjon" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,30.991,331.76" Height="30.96" Width="155.562" RenderTransformOrigin="0.5,0.5" FontSize="18.667" Visibility="Collapsed" >
+					<TextBlock.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform/>
+							<SkewTransform/>
+							<RotateTransform Angle="20.589"/>
+							<TranslateTransform/>
+						</TransformGroup>
+					</TextBlock.RenderTransform>
+				</TextBlock>
+				<TextBlock x:Name="textBlock13" Text="MADE BY @exjon" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,351.75,321" RenderTransformOrigin="0.5,0.5" FontSize="32" Visibility="Collapsed" >
+					<TextBlock.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform/>
+							<SkewTransform/>
+							<RotateTransform Angle="-30.313"/>
+							<TranslateTransform/>
+						</TransformGroup>
+					</TextBlock.RenderTransform>
+				</TextBlock>
+				<TextBlock x:Name="textBlock14" Text="MADE BY @exjon" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,65.25,272.25" RenderTransformOrigin="0.5,0.5" FontSize="32" Visibility="Collapsed" >
+					<TextBlock.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform/>
+							<SkewTransform/>
+							<RotateTransform Angle="163.977"/>
+							<TranslateTransform/>
+						</TransformGroup>
+					</TextBlock.RenderTransform>
+				</TextBlock>
+				<TextBlock x:Name="textBlock15" Text="MADE BY @exjon" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,133.5,123" RenderTransformOrigin="0.5,0.5" FontSize="48" Visibility="Collapsed" >
+					<TextBlock.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform/>
+							<SkewTransform/>
+							<RotateTransform Angle="14.715"/>
+							<TranslateTransform/>
+						</TransformGroup>
+					</TextBlock.RenderTransform>
+				</TextBlock>
+			</Grid>
+	</Grid>
+</Window>

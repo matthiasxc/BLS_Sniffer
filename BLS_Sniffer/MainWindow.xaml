@@ -1,0 +1,26 @@
+﻿<Window x:Class="BLS_Sniffer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <DataTemplate x:Key="BlsSeriesTemplate">
+            <Grid>
+                <TextBlock Text="{Binding RegionName}" />
+            </Grid>
+        </DataTemplate>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width=".5*" />
+            <ColumnDefinition Width=".5*" />
+        </Grid.ColumnDefinitions>
+        <StackPanel>
+            <Button Content="Get Data" Click="Button_Click" Margin="8" />
+            <Button Content="Output Data" Click="Button_Click_1" Margin="8"  />
+        </StackPanel>
+
+        <ListBox x:Name="resultDisplay" 
+                 
+                 Grid.Column="1" ItemTemplate="{DynamicResource BlsSeriesTemplate}" />
+    </Grid>
+</Window>

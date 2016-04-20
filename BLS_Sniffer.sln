@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30324.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLS_Sniffer", "BLS_Sniffer\BLS_Sniffer.csproj", "{865E854D-3851-4936-ACA4-B92D9D3DA3F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLS_API_Portable", "BLS_API_Portable\BLS_API_Portable.csproj", "{C38198B5-E204-4B4C-97AA-19697381EE18}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{865E854D-3851-4936-ACA4-B92D9D3DA3F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{865E854D-3851-4936-ACA4-B92D9D3DA3F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{865E854D-3851-4936-ACA4-B92D9D3DA3F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{865E854D-3851-4936-ACA4-B92D9D3DA3F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C38198B5-E204-4B4C-97AA-19697381EE18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C38198B5-E204-4B4C-97AA-19697381EE18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C38198B5-E204-4B4C-97AA-19697381EE18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C38198B5-E204-4B4C-97AA-19697381EE18}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

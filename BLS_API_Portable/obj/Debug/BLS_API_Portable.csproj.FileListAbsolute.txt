@@ -1,0 +1,15 @@
+\\psf\home\documents\visual studio 2013\Projects\BLS_Sniffer\BLS_API_Portable\obj\Debug\BLS_API_Portable.csproj.App.config
+\\psf\home\documents\visual studio 2013\Projects\BLS_Sniffer\BLS_API_Portable\obj\Debug\BLS_API_Portable.csprojResolveAssemblyReference.cache
+\\psf\home\documents\visual studio 2013\Projects\BLS_Sniffer\BLS_API_Portable\bin\Debug\BLS_API_Portable.dll.config
+\\psf\home\documents\visual studio 2013\Projects\BLS_Sniffer\BLS_API_Portable\bin\Debug\BLS_API_Portable.dll
+\\psf\home\documents\visual studio 2013\Projects\BLS_Sniffer\BLS_API_Portable\bin\Debug\BLS_API_Portable.pdb
+\\psf\home\documents\visual studio 2013\Projects\BLS_Sniffer\BLS_API_Portable\bin\Debug\Newtonsoft.Json.dll
+\\psf\home\documents\visual studio 2013\Projects\BLS_Sniffer\BLS_API_Portable\bin\Debug\System.Net.Http.dll
+\\psf\home\documents\visual studio 2013\Projects\BLS_Sniffer\BLS_API_Portable\bin\Debug\System.Net.Http.Extensions.dll
+\\psf\home\documents\visual studio 2013\Projects\BLS_Sniffer\BLS_API_Portable\bin\Debug\System.Net.Http.Primitives.dll
+\\psf\home\documents\visual studio 2013\Projects\BLS_Sniffer\BLS_API_Portable\bin\Debug\Newtonsoft.Json.xml
+\\psf\home\documents\visual studio 2013\Projects\BLS_Sniffer\BLS_API_Portable\bin\Debug\System.Net.Http.xml
+\\psf\home\documents\visual studio 2013\Projects\BLS_Sniffer\BLS_API_Portable\bin\Debug\System.Net.Http.Extensions.xml
+\\psf\home\documents\visual studio 2013\Projects\BLS_Sniffer\BLS_API_Portable\bin\Debug\System.Net.Http.Primitives.xml
+\\psf\home\documents\visual studio 2013\Projects\BLS_Sniffer\BLS_API_Portable\obj\Debug\BLS_API_Portable.dll
+\\psf\home\documents\visual studio 2013\Projects\BLS_Sniffer\BLS_API_Portable\obj\Debug\BLS_API_Portable.pdb
